@@ -1,0 +1,35 @@
+#Date{
+text-align: center;
+color: beige;
+font-size: 100px;
+margin-top:16%;
+}
+
+.weather{
+    color: beige;
+    margin-left: 68%;
+}
+
+.temp {
+    font-size: 20px;
+}
+
+.name{
+    font-size: 14px;
+    margin-left: 76%;
+    
+}
+
+.quote {
+    font-size: 17px; 
+    color: beige;
+    text-align: center;
+}
+
+.textQuote{
+    margin-top: 18%;
+}
+
+.author{
+   margin-top: 0%;
+}
