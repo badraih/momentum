@@ -3,7 +3,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable indent */
 
-
+    
 axios({
     method: 'get',
     url: 'http://api.openweathermap.org/data/2.5/weather?q=London&units=imperial&appid=bb0b1f10f6bad7022186b356fd9f4ccf',
@@ -12,11 +12,11 @@ axios({
     console.log(response);
     const value = response.data.main.temp;
    const value1 = response.data.name;
-   const iconValue = response.data.weather[0].icon;
-//    const urlIcon = 'http://openweathermap.org/img/w/10d.png';
+   let iconValue = response.data.weather[0].icon;
+//   let urlIcon = 'http://openweathermap.org/img/w/10d.png';
 //    const urlIcon = `http://openweathermap.org/img/w/${iconValue}`;
 //    console.log(urlIcon);
-      $('.temp img').attr('src', `http://openweathermap.org/img/w/${iconValue}`);
+      $('.temp img').attr('src', 'http://openweathermap.org/img/w/' + iconValue + '.png');
       $('.temp').append(`<div> ${value} ºF </div>`);
       $('.name').append(`<div>${value1}</div>`);
     })
